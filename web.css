@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+ background:#F8F5F2;
+}
+
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    z-index:1000;
+}
+
+.logo{
+    color:#f4f3f4;
+    font-size:30px;
+    font-weight:700;
+}
+.logo span {
+    color:#efd005;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar ul li a{
+    color:rgb(243, 243, 243);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#1adf6f;
+}
+
+.home-img{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    background:
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    url('img/blur.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.content{
+    color:white;
+    max-width:650px;
+    animation:fadeUp 1.5s ease;
+}
+
+.content h1{
+    font-size:60px;
+}
+
+.content p{
+    margin:20px 0;
+    line-height:1.8;
+}
+ .card .btn {
+     margin-top:auto;
+    margin-bottom:15px;
+    align-self: center;
+ }
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#12da5f;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    transition:.3s;
+    margin-bottom:15px;
+}
+
+.btn:hover{
+    background:#12da5f;
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(212,160,23,0.5);
+}
+
+.about {
+    padding: 100px 8%;
+    text-align: center;
+}
+.about h2{
+    font-size:40px;
+    color:#8B5E3C;
+    margin-bottom:20px;
+}
+.about h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    background:#DCC00B;
+    margin:10px auto 0;
+    border-radius:10px;
+}
+.menu {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.chef {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.contact{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    width:260px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 15px 25px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+.card:hover img{
+    transform:scale(1.02);
+}
+.card h3{
+     margin:12px 0 5px;
+    font-size:20px;
+}
+
+.card p{
+    font-size:13px;
+    color:#666;
+    padding:0 15px;
+    line-height:1.4;
+    min-height: 60px;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input {
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.contact textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:12px;
+    border:none;
+    background:#ff4d4d;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.kontak-items{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.kontak-items .item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    padding:10px 15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.kontak-items img{
+    width:30px;
+    height:30px;
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:50px;
+    background:#c36903c0;
+}
+
+.stat h2{
+    color:#d1aa0f;
+    font-size:40px;
+}
+
